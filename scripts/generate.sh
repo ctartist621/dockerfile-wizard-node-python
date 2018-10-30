@@ -35,7 +35,8 @@ if [ ! -e $PYTHON_VERSION_NUM ] ; then
     rm Python-$PYTHON_VERSION_NUM.tgz && \
     cd Python-$PYTHON_VERSION_NUM && \
     ./configure && \
-    make install"
+    make install && \
+    pip3 install pipenv"
 fi
 
 # if [ ! -e $PHP_VERSION_NUM ] ; then
